@@ -39,13 +39,6 @@ h3 { font-size: 17px; margin: 24px 0 6px; }
 a { color: var(--teal); }
 code { background: var(--sand); padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
 blockquote { margin: 16px 0; padding: 10px 14px; background: var(--paper); border-left: 4px solid var(--line); }
-.draft {
-  padding: 12px 14px;
-  background: var(--mustard-soft);
-  border: 1px solid var(--mustard);
-  border-radius: 10px;
-  font-size: 15px;
-}
 .blank { color: var(--terra-dark); font-weight: 700; }
 .note { color: var(--terra-dark); font-size: 0.9em; }
 .table { overflow-x: auto; margin: 16px 0; }
