@@ -1,0 +1,55 @@
+/* 2+1 site: the app's colours (docs/tasarim-sistemi.md), system fonts, no scripts. */
+:root {
+  --cream: #f5efe3;
+  --paper: #fbf8f1;
+  --sand: #ede4d3;
+  --ink: #1c2629;
+  --muted: #4f5a5d;
+  --line: #e3dacb;
+  --teal: #0e5a60;
+  --terra-dark: #8f3322;
+  --mustard-soft: #faf0d9;
+  --mustard: #c99a2e;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+  padding: 14px 16px;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+.brand { font: 700 24px/1 Georgia, "Times New Roman", serif; color: var(--teal); text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 4px 14px; }
+nav a { color: var(--muted); text-decoration: none; font-size: 15px; }
+nav a[aria-current="page"] { color: var(--teal); font-weight: 700; }
+main { max-width: 760px; margin: 0 auto; padding: 20px 16px 48px; }
+h1 { font: 700 32px/1.2 Georgia, "Times New Roman", serif; margin: 20px 0 12px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 17px; margin: 24px 0 6px; }
+a { color: var(--teal); }
+code { background: var(--sand); padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+blockquote { margin: 16px 0; padding: 10px 14px; background: var(--paper); border-left: 4px solid var(--line); }
+.draft {
+  padding: 12px 14px;
+  background: var(--mustard-soft);
+  border: 1px solid var(--mustard);
+  border-radius: 10px;
+  font-size: 15px;
+}
+.blank { color: var(--terra-dark); font-weight: 700; }
+.note { color: var(--terra-dark); font-size: 0.9em; }
+.table { overflow-x: auto; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; background: var(--paper); }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: var(--sand); }
+footer { max-width: 760px; margin: 0 auto; padding: 16px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
